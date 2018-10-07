@@ -23,7 +23,7 @@ fun takeInput(): IntArray {
 
 fun bubbleSort(numbers: IntArray) {
     for (pass in 0 until (numbers.size - 1)) {
-        // A single pass of bubble sort
+        // A single pass of bubble mergeSortOptimized
         for (currentPosition in 0 until (numbers.size - pass - 1)) {
             // This is a single step
             if (numbers[currentPosition] > numbers[currentPosition + 1]) {
@@ -38,7 +38,7 @@ fun bubbleSort(numbers: IntArray) {
 fun bubbleSortWithSteps(numbers: IntArray) {
     println("Initial numbers: [%s]".format(numbers.joinToString(separator = ", ")))
     for (pass in 0 until (numbers.size - 1)) {
-        // A single pass of bubble sort
+        // A single pass of bubble mergeSortOptimized
         for (currentPosition in 0 until (numbers.size - pass - 1)) {
             // This is a single step
             print("Pass-%d-Step-%d: Comparing elements at position %d(%d) and %d(%d). ".format(pass, currentPosition,
